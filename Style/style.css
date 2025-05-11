@@ -306,7 +306,8 @@ textarea {
 /* end */
 
 .login {
-    background: linear-gradient(rgba(246, 111, 0.7), hsl(27, 50%, 50%))
+    background: #f08469;
+    background: linear-gradient(90deg, rgba(240, 132, 105, 1) 99%, rgba(246, 111, 77, 1) 15%);
 }
 
 /* start login */
@@ -322,10 +323,9 @@ textarea {
 
 .login form input:focus,
 .register form input:focus,
-.book form input:focus ,
-.book form select:focus ,
-.book form textarea:focus
-{
+.book form input:focus,
+.book form select:focus,
+.book form textarea:focus {
     border-color: var(--main-color);
     box-shadow: none;
 }
@@ -341,18 +341,27 @@ textarea {
 }
 
 .register {
-    background: linear-gradient(hsl(27, 50%, 50%), rgba(246, 111, 0.7))
+    background: #f08469;
+    background: linear-gradient(90deg, rgba(240, 132, 105, 1) 99%, rgba(246, 111, 77, 1) 15%);
 }
 
 .register form {
     width: 600px;
 }
 
-.error-message{
+.error-message {
     font-weight: bold;
     color: rgb(255, 0, 0);
 }
+
 label {
     color: #888 !important;
     font-weight: bold;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        padding: 0 30px;
+    }
 }
