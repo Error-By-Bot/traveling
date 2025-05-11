@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- google font -->
+
+    <link rel="stylesheet" href="../Style/all.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../Style/bootstrap.min.css">
+    <!--bootstrap  -->
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <nav class="navbar py-3 shadow navbar-expand-lg bg-light fixed-top">
+        <div class="container ">
+            <a class="navbar-brand" href="../index.html"><img src="../img/Logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-center " id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./tours.html">tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./calendar.html">calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="right-nav d-none d-lg-block">
+                <a href="./login.html" class="btn btn-book  btn-danger rounded-pill">Book now</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="book py-5 my-5">
+        <div class="container py-5">
+            <div class="main-header text-center">
+                <h1>Book Now </h1>
+                <p class="w-50 text-secondary m-auto my-3">It is a long established fact that a reader will be of a page
+                    when established fact looking at its
+                    layout.
+                </p>
+            </div>
+
+            <form action="" class="form rounded show" >
+                <div class="mb-3">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name"
+                        aria-describedby="helpId" />
+                </div>
+                <div class="mb-3">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name"
+                        aria-describedby="helpId" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email"
+                        aria-describedby="helpId" />
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Time</label>
+                    <input type="date" name="time" id="time" class="form-control" placeholder="Email"
+                        aria-describedby="helpId" />
+                </div>
+                <div class="mb-3">
+                    <label for="places">Choose a tourist destination in Egypt:</label>
+                    <select class=" form-select"  id="places" name="places">
+                        <option value="dahab">Dahab</option>
+                        <option value="hurghada">Hurghada</option>
+                        <option value="luxor">Luxor</option>
+                        <option value="marsaalam">Marsa Alam</option>
+                        <option value="stcatherine">Saint Catherine</option>
+                        <option value="siwa">Siwa Oasis</option>
+                        <option value="aswan">Aswan</option>
+                        <option value="cairo">Islamic Cairo</option>
+                        <option value="rasshitan">Ras Shitan / Nuweiba</option>
+                        <option value="fayoum">Fayoum</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">message</label>
+                    <textarea class="form-control" name="" id="message" rows="3"></textarea>
+                </div>
+                <a href="" class="btn book-btn bg-or text-light border w-100 fs-3 my-5" >Book Now</a>
+                
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer class="footer py-5 " id="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-3">
+                    <div class="inner-footer">
+                        <a href="#"><img src="../img/Logo.png" class="img-fluid" alt="logo"></a>
+                        <p class="my-3">Enjoy The Touring with salty</p>
+                        <div class="medai mt-3 d-flex gap-3">
+                            <a href="https://www.facebook.com/" class="btn  brand  bg-or" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" class="btn  brand bg-or" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.twitter.com/" class="btn  brand bg-or" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/" class="btn brand  bg-or" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="inner-footer">
+                        <h3>Resources</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li class="my-2">
+                                <a class="text-secondary text-decoration-none" href="#">Dowland</a>
+                            </li>
+                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">Help Canter</a>
+                            </li>
+                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">Resources</a></li>
+                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">DowlanApp
+                                    Decorationd</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="inner-footer">
+                        <h3>Travelers</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-2">
+                                <a class="text-secondary text-decoration-none" href="#">Why Travelers</a>
+                            </li>
+                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Enterprise</a></li>
+                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Customer
+                                    Stories</a></li>
+                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Instagram Post</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="inner-footer">
+                        <h3>Company</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-2">
+                                <a class="text-secondary text-decoration-none" href="#">Traveling</a>
+                            </li class="mt-2">
+                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">About local</a>
+                            </li>
+                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">information</a>
+                            </li>
+                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">success</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/code.js"></script>
+</body>
+
+</html>

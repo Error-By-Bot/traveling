@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- google font -->
+    <link rel="stylesheet" href="../Style/all.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../Style/bootstrap.min.css">
+    <!--bootstrap  -->
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <div class="login min-vh-100 d-flex align-items-center">
+        <div class="container d-flex justify-content-center align-items-center">
+            <form id="loginForm" class="form bg-light bg-opacity-75 rounded-3 shadow">
+                <h1 class="text-center text-or"><i class="fa-solid fa-user text-light opacity-75"></i> Login</h1>
+                <div class="mb-3">
+                    <label for="username" class="form-label text-or">Email</label>
+                    <input type="email" name="username" id="username" class="form-control" placeholder="username"
+                        required />
+                    <div class="error-message" id="loginNameError"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label text-or">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="password"
+                        required />
+                    <div class="error-message" id="loginPassError"></div>
+                </div>
+                <div class="btn-login text-center">
+                    <button type="submit" class="btn btn-form w-100 bg-or text-light border rounded">Login</button>
+                </div>
+                <p class="text-black-50 mt-3 text-center">Don't have an account? <a href="./register.html"
+                        class="text-or text-decoration-none">Register Here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/code.js"></script>
+</body>
+
+</html>
