@@ -17,91 +17,95 @@
     <link rel="stylesheet" href="../Style/all.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="../Style/bootstrap.min.css">
-    <!--bootstrap  -->
-    <link rel="stylesheet" href="../Style/style.css">
+    <!-- boostrap -->
+    <!-- file css -->
+    <link rel="stylesheet" href="../Style/style.css"">
+
 </head>
-
 <body>
+    <nav class=" navbar py-3 sticky-top shadow navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/Logo.png" alt="logo" class="img-fluid">
+        </a>
+        <div class="togle-nav d-flex align-items-center">
+            <a class="text-dark d-block d-lg-none" href="./pages/login.html"><i
+                    class=" icon-nav fa-solid fa-right-to-bracket"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
 
-    <nav class="navbar py-3 shadow navbar-expand-lg bg-light fixed-top">
-        <div class="container  ">
-            <a class="navbar-brand" href="#"><img src="../img/Logo.png" alt="logo"></a>
-            <div class="d-flex gap-3 align-items-center">
-                <a href="./login.html" class="d-block d-lg-none ms-4 text-dark text-decoration-none  fs-4"><i
-                        class="fa-solid fa-right-to-bracket "></i></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
 
-            </div>
-            <div class="collapse navbar-collapse justify-content-lg-center " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./book.html">Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./tours.html">tours</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./calendar.html">calendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./contact.html">contact</a>
-                    </li>
-                </ul>
-                <div class="right-nav">
-                    <a href="./login.html" class="btn btn-book  btn-danger rounded-pill">Book now</a>
-                </div>
-            </div>
 
+            </button>
 
         </div>
-    </nav>
 
-    <section class="about py-5 my-5">
-        <div class="container ">
-            <div class="row align-items-center">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  active" aria-current="page"
+                        href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  " href="#">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="./book.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  " href="./tours.html">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="./calendar.html">calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="./contact.html">contact</a>
+                </li>
+            </ul>
+            <a class="btn ms-3 bg-or d-block rounded-pill text-light main-btn" href="./login.html">Book Now</a>
+        </div>
+    </div>
+    </nav>
+    <!-- end nav -->
+    <!-- start about  -->
+    <section class="about py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <img src="../img/about.png" alt="about" class="img-fluid ">
+                    <div class="img d-flex justify-content-center">
+                        <img src="../img/about.png" alt="about img" class="img-fluid d-block">
+                    </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="content-about">
-                        <h3 class="text-or ">Our EXperience </h3>
-                        <h2 class="my-3">Our Stories Hove Adventures</h2>
-                        <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-                            obcaecati
-                            quam veniam nobis
-                            quae eveniet doloribus
+                    <div class="inner-about">
+                        <h3 class="text-or fs-2">Our EXperience </h3>
+                        <h2>Our Stories Hove Adventures </h2>
+                        <p class="text-secondary lh-base my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Mollitia obcaecati quam veniam
+                            nobis quae eveniet doloribus
                             tempore aspernatur ab accusamus illo dignissimos quidem possimus asperiores veritatis sed,
-                            quia
-                            laborum perspiciatis.
+                            quia laborum perspiciatis.
                         </p>
-                        <div class="counters mt-5 ">
-                            <div class="row">
+                        <div class="items mt-5">
+                            <div class="row g-3">
                                 <div class="col-4">
-                                    <div class="counter bg-white rounded-1 p-4  text-center">
-                                        <h4 class="text-or fs-1 fw-bold ">12K+</h4>
-                                        <p class="text-secondary fw-bold">Succes Journey</p>
+                                    <div class="inner-item bg-light p-4 text-center">
+                                        <h3 class="text-or fs-1 fw-bold">12K+ </h3>
+                                        <h5 class="text-secondary">Succes Journey </h5>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="counter bg-white rounded-1 p-4  text-center">
-                                        <h4 class="text-or fs-1 fw-bold ">16K+</h4>
-                                        <p class="text-secondary fw-bold">Succes Journey</p>
+                                    <div class="inner-item inner-item bg-light p-4 text-center">
+                                        <h3 class="text-or fs-1 fw-bold">16K+ </h3>
+                                        <h5 class="text-secondary">Succes Journey </h5>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="counter bg-white rounded-1 p-4  text-center">
-                                        <h4 class="text-or fs-1 fw-bold ">18K+</h4>
-                                        <p class="text-secondary fw-bold">Succes Journey</p>
+                                    <div class="inner-item inner-item bg-light p-4 text-center">
+                                        <h3 class="text-or fs-1 fw-bold">18K+ </h3>
+                                        <h5 class="text-secondary">Succes Journey </h5>
                                     </div>
                                 </div>
                             </div>
@@ -111,40 +115,40 @@
             </div>
         </div>
     </section>
+    <!-- end about  -->
 
-    <section class="details py-5">
+    <section class="about-details py-5">
         <div class="container">
-            <div class="row g-4 align-items-center">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <div class="img text-center">
-                        <img src="../img/tst.png"  class="img-fluid" alt="">
+                    <div class="img d-flex justify-content-center align-items-center">
+                        <img src="../img/tst.png" alt="" class="d-block img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="inner-details">
-                        <h2>A customer said about us: </h2>
-                        <div class="content p-4 mt-3 bg-white">
+                    <div class="inner-content-about">
+                        <h2 class="py-3">A customer said about us: </h2>
+                        <div class="sec-content bg-light p-4">
                             <p class="text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Cupiditate nesciunt quos
                                 suscipit deleniti delectus veritatis
                                 repellendus deserunt ad eius modi, vitae sint voluptatum quae voluptates minima
                                 voluptatibus harum facilis aperiam!
                             </p>
-                            <div class="stars fs-4">
+                            <div class="stars my-4 d-flex gap-1 ">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <div class="end-details mt-3 d-flex justify-content-between align-items-center">
-                                <div class="">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="content ">
                                     <h4>Moaz Ahmed </h4>
-                                    <p>Engineer</p>
+                                    <h6 class="text-muted">Engineer</h6>
                                 </div>
-                                <div class="arrow">
-                                    <i class="fa-solid fa-arrow-right "></i>
-                                </div>
+                                <span class=" arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
                             </div>
                         </div>
                     </div>
@@ -153,77 +157,80 @@
         </div>
     </section>
 
-    <footer class="footer py-5 " id="footer">
+
+
+
+    <footer class=" footer py-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <a href="#"><img src="../img/Logo.png" class="img-fluid" alt="logo"></a>
-                        <p class="my-3">Enjoy The Touring with salty</p>
-                        <div class="medai mt-3 d-flex gap-3">
-                            <a href="https://www.facebook.com/" class="btn  brand  bg-or" target="_blank"><i
+                        <a href=""><img src="../img/Logo.png" class="img-fluid d-block" alt="logo"></a>
+                        <p class="my-3 text-secondary">Enjoy The Touring with salty </p>
+                        <div class="medai mt-2 d-flex gap-3">
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.facebook.com/"><i
                                     class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/" class="btn  brand bg-or" target="_blank"><i
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.instagram.com/"><i
                                     class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.twitter.com/" class="btn  brand bg-or" target="_blank"><i
-                                    class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/" class="btn brand  bg-or" target="_blank"><i
-                                    class="fa-brands fa-linkedin"></i></a>
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Resources</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="my-2">
-                                <a class="text-secondary text-decoration-none" href="#">Dowland</a>
+                        <h3 class="mb-3">Resources </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Dowland</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Help Canter</a>
                             </li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">Help Canter</a>
-                            </li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">Resources</a></li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">DowlanApp
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Resources</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> DowlanApp
                                     Decorationd</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Travelers</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="mt-2">
-                                <a class="text-secondary text-decoration-none" href="#">Why Travelers</a>
+                        <h3 class="mb-3">Travelers </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Why Travelers</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Enterprise</a></li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Customer
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Enterprise</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Customer
                                     Stories</a></li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Instagram Post</a>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Instagram Post</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Company</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="mt-2">
-                                <a class="text-secondary text-decoration-none" href="#">Traveling</a>
-                            </li class="mt-2">
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">About local</a>
+                        <h3 class="mb-3">Company </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href="">Traveling</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> About local</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">information</a>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> informations</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">success</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> success</a></li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
-    </footer>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/code.js"></script>
-</body>
+    </footer>
+    <script src=" ../js/bootstrap.bundle.min.js">
+    </script>
+    <!-- code js -->
+    <script src=" ../js/code.js">
+    </script>
+    </body>
 
 </html>

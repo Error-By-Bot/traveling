@@ -1,31 +1,14 @@
+:root {
+    --main-color: #f66f4d;
+}
+
+
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-:root {
-    --text-color: #2d3134;
-    --bg-color: #faf8ed;
-    --main-color: #f66f4d;
-    --other-color: #5b5f62;
-    --h1-font: 5.3rem;
-    --h2-font: 3.6rem;
-    --p-font: 1rem;
-}
-
-.text-or {
-    color: var(--main-color);
-}
-
-.bg-or {
-    background-color: var(--main-color);
-}
-
-body {
-    font-family: "Nunito Sans", sans-serif;
-    background-color: var(--bg-color);
-}
 
 h1,
 h2,
@@ -36,82 +19,48 @@ h6 {
     font-family: "Inter", sans-serif;
 }
 
-
-
-.navbar .nav-item {
-    padding: 0 15px;
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #faf8ed;
 }
 
-.navbar .nav-item .nav-link {
-    color: #2d3134;
-    text-transform: capitalize;
-}
-
-.navbar .nav-item .nav-link:hover {
+.text-or {
     color: var(--main-color);
 }
 
-.navbar .btn-book {
+.bg-or {
     background-color: var(--main-color);
-    padding: 10px 20px;
-    color: #fff;
 }
 
-.navbar .btn-book:hover {
-    background-color: transparent;
-    color: var(--main-color);
-
+/* start header */
+.inner-header h1 {
+    font-size: 85px;
 }
 
-.navbar-nav .nav-link.active {
-    color: var(--main-color);
-    font-weight: bold;
+.main-btn {
+    border-color: var(--main-color) !important;
+    transition: .3s;
 }
 
-/* end nav */
-/* start nav */
-
-
-.header h1 {
-    font-size: var(--h1-font);
+.main-btn:hover {
+    color: var(--main-color) !important;
 }
 
-.header p {
-    font-size: var(--p-font);
-}
-
-.btns .explore {
-    background-color: var(--main-color);
-
-}
-
-.video {
-    display: inline-block;
+.inner-header .icon-play {
     width: 50px;
     height: 50px;
+    transition: .3s;
     border: 1px solid var(--main-color);
-    border-radius: 50%;
-    background-color: var(--main-color);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.video:hover {
-    background-color: transparent;
-    color: var(--main-color);
-}
-
-.btns .main-btn:hover {
-    background: transparent;
+.inner-header .icon-play:hover {
     color: var(--main-color) !important;
-    border-color: var(--main-color) !important;
+    background-color: #fff;
 }
 
-.img-hero {
-    animation: updown 5s linear infinite alternate;
+.header img {
     position: relative;
+    animation: updown 5s linear infinite alternate;
 }
 
 @keyframes updown {
@@ -133,78 +82,112 @@ h6 {
 
     100% {
         bottom: 40px;
-
     }
 }
 
-/* end */
+/* end header */
 
-/* start about */
-
-.content-about h2 {
-    font-size: var(--h2-font);
-}
-
-.about img {
-    animation: updown 5s linear infinite alternate;
-    position: relative;
-}
-
-/* end about */
-.categorie img {
+/* start catgire */
+.catgire .img img {
     transition: .3s;
 }
 
-.categorie img:hover {
-    transform: translateY(-15px);
+.catgire .img img:hover {
+    transform: translateY(-13px);
 }
 
-/* end  */
+/* end catgire */
+
+/* start about */
+.about .img img {
+    position: relative;
+    animation: updown 5s linear infinite alternate;
+}
+
+.inner-about h2 {
+    font-size: 65px;
+}
+
+
+/* end about */
 
 /* start footer */
+
 .footer {
-    background-color: hsl(51, 20%, 90%);
+    background: #ebe9e0;
 }
 
-.medai .brand {
+.medai a {
+
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    font-size: 20px;
-    border: var(--main-color) 1px solid;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 1px var(--main-color) solid;
+    transition: .3s;
+
 }
 
-.medai .brand:hover {
-    color: var(--main-color);
-    border-color: var(--main-color);
+.medai a:hover {
+    background: transparent;
+    color: var(--main-color) !important;
+}
+
+.inner-footer a {
+    transition: .3s;
 }
 
 .inner-footer a:hover {
     color: var(--main-color) !important;
-
 }
 
-/* end home page */
+/* end footer */
+
+/* start nav*/
+.nav-link {
+    font-style: 18px !important;
+}
+
+.nav-link:hover {
+    color: var(--main-color) !important;
+}
+
+.active {
+    color: var(--main-color) !important;
+    font-weight: bold;
+}
+
+.icon-nav {
+    font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* end nav*/
 
 
-/* start about page */
-.details h2 {
+/* ===============================end home =================================== */
+/* ===============================start about page =================================== */
+
+.about-details img {
+    position: relative;
+    animation: updown 5s linear infinite alternate;
+}
+
+.inner-content-about h2 {
     font-size: 45px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .stars i {
     color: #ffc14b;
+    font-size: 25px;
 }
 
-.arrow {
+.arrow-right {
+
     width: 50px;
     height: 50px;
-    background: var(--text-color);
+    background-color: #2d3134;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -215,159 +198,73 @@ h6 {
     font-size: 25px;
 }
 
-.arrow:hover {
+.arrow-right:hover {
     transform: rotate(90deg);
-    background-color: var(--main-color);
+    background: var(--main-color);
 }
 
-.details img {
-    animation: updown 5s linear infinite alternate;
-    position: relative;
+/* ===============================end about page =================================== */
+/* ===============================start book page =================================== */
+
+
+.main-header h2 {
+    font-size: 55px !important;
 }
 
-/* end */
-
-
-/* start tour */
-
-.item .layer {
-    top: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, .7);
-    width: 100%;
-    height: 100%;
-    transition: .3s;
-
+input,
+select,
+textarea {
+    box-shadow: none !important;
+    border: 2px #8888885b solid !important;
 }
 
-.item:hover .layer {
-    top: 0;
-}
-
-.destinations h1,
-.contact .main-header h1,
-.calender h1 {
-    font-size: var(--h2-font);
-}
-
-.destinations .main-btn {
-    background-color: var(--main-color);
-}
-
-.destinations .main-btn:hover {
-    background-color: hsl(51, 57%, 96%);
-    color: var(--main-color) !important;
-
-}
-
-/* end */
-
-/* start contact */
-form {
-    background-color: white;
-    padding: 50px 70px;
-}
-
-.contact input {
-    padding: 15px 20px;
-}
-
-.contact input:focus,
-.contact textarea:focus {
-    border-color: var(--main-color);
-    /* outline:var(--main-color) !important; */
-    box-shadow: none;
-}
-
-.group-input input {
-    width: 49%;
-}
-
-.form .main-btn {
-    color: #fff;
-    border: 1px solid var(--main-color);
-    transform: .3s;
-}
-
-.form .main-btn:hover {
-    color: var(--main-color);
+input:focus,
+select:focus,
+textarea:focus {
+    border: var(--main-color);
+    border: 2px var(--main-color) solid !important;
 }
 
 textarea {
-    height: 150px;
-    max-height: 250px;
+    height: 250px;
+    max-height: 350px !important;
 }
 
-.book-btn:hover {
-    border-color: var(--main-color) !important;
-    color: var(--main-color) !important;
+/* ===============================end book page =================================== */
+/* ===============================end tour page =================================== */
+.inner-item {
+    position: relative;
+    overflow: hidden;
 }
 
-/* end */
-
-.login {
-    background: #f08469;
-    background: linear-gradient(90deg, rgba(240, 132, 105, 1) 99%, rgba(246, 111, 77, 1) 15%);
+.inner-item:hover .layer {
+    top: 0;
 }
 
-/* start login */
-.login form {
+.inner-item .layer {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+
+/* ===============================end tour page =================================== */
+/* ===============================start contact page =================================== */
+.contact .icon-contact {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+
+/* ===============================end contact page =================================== */
+
+.login .inner-login {
+    width: 400px;
+}
+
+.register .inner-register {
     width: 500px;
-}
-
-.login form input,
-.register form input .book form input {
-    box-shadow: none;
-    border: 3px transparent solid;
-}
-
-.login form input:focus,
-.register form input:focus,
-.book form input:focus,
-.book form select:focus,
-.book form textarea:focus {
-    border-color: var(--main-color);
-    box-shadow: none;
-}
-
-
-.btn-form:hover {
-    border-color: var(--main-color) !important;
-    color: var(--main-color) !important;
-}
-
-.login p {
-    font-size: 15px;
-}
-
-.register {
-    background: #f08469;
-    background: linear-gradient(90deg, rgba(240, 132, 105, 1) 99%, rgba(246, 111, 77, 1) 15%);
-}
-
-.register form {
-    width: 600px;
-}
-
-.error-message {
-    font-weight: bold;
-    color: rgb(255, 0, 0);
-}
-
-label {
-    color: #888 !important;
-    font-weight: bold;
-}
-
-@media (max-width: 575.98px) {
-    .container {
-        width: 100%;
-        padding: 0 30px;
-    }
-}
-.icon{
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
-    color: var(--main-color);
 }

@@ -13,59 +13,66 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
     <!-- google font -->
+
     <link rel="stylesheet" href="../Style/all.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="../Style/bootstrap.min.css">
-    <!--bootstrap  -->
+    <!-- boostrap -->
+    <!-- file css -->
     <link rel="stylesheet" href="../Style/style.css">
 </head>
 
 <body>
 
-<!-- HTML -->
-<div class="register min-vh-100 d-flex align-items-center">
-    <div class="container d-flex justify-content-center align-items-center">
-        <form id="registerForm" class="form bg-light bg-opacity-75 rounded-3 shadow">
-            <h1 class="text-center text-or"><i class="fa-solid fa-user-plus text-light opacity-75"></i> Register</h1>
-            <div class="mb-3">
-                <label for="registerUsername" class="form-label text-or">Name</label>
-                <input type="text" name="username" id="registerUsername" class="form-control" placeholder="username"
-                    required />
-                <div class="error-message" id="nameError"></div>
+    <div class="register min-vh-100">
+        <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+            <div class="inner-register rounded shadow p-5">
+                <h2 class="text-or text-center fw-bold my-3"><i class="fa-solid fa-user-plus"></i> Register </h2>
+                <form action="" id="form-register" class="form mt-4">
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-secondary fw-bold">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name"
+                            aria-describedby="helpId" />
+                        <p class=" fs-6 fw-bold text-danger  error mt-2"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-secondary fw-bold">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email"
+                            aria-describedby="helpId" />
+                            <p class=" fs-6 fw-bold text-danger  error mt-2"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label text-secondary fw-bold">Password</label>
+                        <input type="password" name="password" id="password" class="form-control"
+                            placeholder="Enter password" aria-describedby="helpId" />
+                            <p class=" fs-6 fw-bold text-danger  error mt-2"></p>
+
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="compassword" class="form-label text-secondary fw-bold">Confirm Password</label>
+                        <input type="password" name="compassword" id="compassword" class="form-control"
+                            placeholder="Enter Confirm password" aria-describedby="helpId" />
+                            <p class=" fs-6 fw-bold text-danger  error mt-2"></p>
+
+                    </div>
+
+
+                    <input value="Register" type="submit" class="btn main-btn bg-or text-light w-100 d-block" >
+                    <p class="mt-4 text-secondary text-center">Already have an account? <a
+                            class=" text-decoration-none text-or " href="./login.html">Login Here</a>
+                    </p>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label text-or">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="email" required />
-                <div class="error-message" id="emailError"></div>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label text-or">Password</label>
-                <input type="password" name="password" id="password" class="form-control" placeholder="password"
-                    required />
-                <div class="error-message" id="passwordError"></div>
-            </div>
-            <div class="mb-3">
-                <label for="conpassword" class="form-label text-or">Confirm Password</label>
-                <input type="password" name="conpassword" id="conpassword" class="form-control"
-                    placeholder="Confirm password" required />
-                <div class="error-message" id="conpasswordError"></div>
-            </div>
-            <div class="btn-login text-center">
-                <button type="submit" id="btn-login"
-                    class="btn btn-form w-100 bg-or text-light border rounded">Register</button>
-            </div>
-            <p class="text-black-50 mt-3 text-center">Already have an account? <a href="./login.html"
-                    class="text-or text-decoration-none">Login Here</a></p>
-        </form>
+        </div>
     </div>
-</div>
-  
-      
 
 
-
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/code.js"></script>
+    <script src=" ../js/bootstrap.bundle.min.js">
+    </script>
+    <!-- code js -->
+    <script src=" ../js/code.js">
+    </script>
 </body>
 
 </html>

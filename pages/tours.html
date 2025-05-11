@@ -17,229 +17,236 @@
     <link rel="stylesheet" href="../Style/all.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="../Style/bootstrap.min.css">
-    <!--bootstrap  -->
-    <link rel="stylesheet" href="../Style/style.css">
+    <!-- boostrap -->
+    <!-- file css -->
+    <link rel="stylesheet" href="../Style/style.css"">
+
+
 </head>
-
 <body>
-    <nav class="navbar py-3 shadow navbar-expand-lg bg-light fixed-top">
-        <div class="container  ">
-            <a class="navbar-brand" href="#"><img src="../img/Logo.png" alt="logo"></a>
-            <div class="d-flex gap-3 align-items-center">
-                <a href="./login.html" class="d-block d-lg-none ms-4 text-dark text-decoration-none  fs-4"><i
-                        class="fa-solid fa-right-to-bracket "></i></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <nav class=" navbar py-3 sticky-top shadow navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/Logo.png" alt="logo" class="img-fluid">
+        </a>
+        <div class="togle-nav d-flex align-items-center">
+            <a class="text-dark d-block d-lg-none" href="./pages/login.html"><i
+                    class=" icon-nav fa-solid fa-right-to-bracket"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
 
-            </div>
-            <div class="collapse navbar-collapse justify-content-lg-center " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./about.html">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./book.html">Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="">tours</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./calendar.html">calendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./contact.html">contact</a>
-                    </li>
-                </ul>
-                <div class="right-nav">
-                    <a href="./login.html" class="btn btn-book  btn-danger rounded-pill">Book now</a>
-                </div>
-            </div>
-
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
         </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  active" aria-current="page"
+                        href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  " href="./about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="./book.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  " href="#">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="./calendar.html">calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="./contact.html">contact</a>
+                </li>
+            </ul>
+            <a class="btn ms-3 bg-or d-block rounded-pill text-light main-btn" href="./login.html">Book Now</a>
+        </div>
+    </div>
     </nav>
+    <!-- end nav -->
 
-
-    <div class="destinations py-5 my-5">
+    <div class="tour py-5">
         <div class="main-header text-center">
-            <h1>Destinations </h1>
-            <p class="text-secondary w-50 m-auto my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                dolorem, maxime sunt quia facilis
-                tenetur molestias
+            <h2 class="">Destinations </h2>
+            <p class="text-secondary m-auto  my-3 w-50 "> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam dolorem, maxime sunt quia facilis tenetur molestias
                 fugit reiciendis minus soluta rem? Illo nesciunt neque quas? Et quos dignissimos eveniet tempora.
             </p>
         </div>
         <div class="container">
-            <div class="cards my-5 py-5">
-                <div class="row g-5">
-                    <div class="col-lg-4">
-                        <div class="item position-relative overflow-hidden  ">
-                            <img src="../img/img1.png" alt="" class="img-fluid w-100">
-                            <div
-                                class="layer position-absolute rounded-4 text-light d-flex justify-content-center align-items-center flex-column">
-                                <h3>Mountain Hiking Tour</h3>
-                                <h5>Mountain Hiking Tour</h5>
-                                <div class="card-details  d-flex gap-5 mt-5 justify-content-between align-items-center">
-                                    <h5>85$</h5>
-                                    <a href="" class="btn fw-bold main-btn text-white">Buy Now</a>
+            <div class="row g-5 my-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="inner-item">
+                        <img src="../img/img1.png" alt="img" class="img-fluid w-100 d-block">
+                        <div class="layer rounded-4 d-flex justify-content-center align-items-center">
+                            <div class="inner-layer text-center text-light">
+                                <h4>Mountain Hiking Tour </h4>
+                                <h6 class="mb-5">Mountain Hiking Tour </h6>
+                                <div class="end-card d-flex justify-content-around mt-5 align-items-center">
+                                    <span class="fw-bold fs-4">85$ </span>
+                                    <a class="btn main-btn bg-or text-light" href="./book.html">Book Now </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="item position-relative overflow-hidden  ">
-                            <img src="../img/img2.png" alt="" class="img-fluid w-100">
-                            <div
-                                class="layer position-absolute rounded-4 text-light d-flex justify-content-center align-items-center flex-column">
-                                <h3>Mountain Hiking Tour</h3>
-                                <h5>Mountain Hiking Tour</h5>
-                                <div class="card-details  d-flex gap-5 mt-5 justify-content-between align-items-center">
-                                    <h5>85$</h5>
-                                    <a href="" class="btn fw-bold main-btn text-white">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="item position-relative overflow-hidden  ">
-                            <img src="../img/img3.png" alt="" class="img-fluid w-100">
-                            <div
-                                class="layer position-absolute rounded-4 text-light d-flex justify-content-center align-items-center flex-column">
-                                <h3>Mountain Hiking Tour</h3>
-                                <h5>Mountain Hiking Tour</h5>
-                                <div class="card-details  d-flex gap-5 mt-5 justify-content-between align-items-center">
-                                    <h5>85$</h5>
-                                    <a href="" class="btn fw-bold main-btn text-white">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="item position-relative overflow-hidden  ">
-                            <img src="../img/img3.png" alt="" class="img-fluid w-100">
-                            <div
-                                class="layer position-absolute rounded-4 text-light d-flex justify-content-center align-items-center flex-column">
-                                <h3>Mountain Hiking Tour</h3>
-                                <h5>Mountain Hiking Tour</h5>
-                                <div class="card-details  d-flex gap-5 mt-5 justify-content-between align-items-center">
-                                    <h5>85$</h5>
-                                    <a href="" class="btn fw-bold main-btn text-white">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="item position-relative overflow-hidden  ">
-                            <img src="../img/img1.png" alt="" class="img-fluid w-100">
-                            <div
-                                class="layer position-absolute rounded-4 text-light d-flex justify-content-center align-items-center flex-column">
-                                <h3>Mountain Hiking Tour</h3>
-                                <h5>Mountain Hiking Tour</h5>
-                                <div class="card-details  d-flex gap-5 mt-5 justify-content-between align-items-center">
-                                    <h5>85$</h5>
-                                    <a href="" class="btn fw-bold main-btn text-white">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="item position-relative overflow-hidden  ">
-                            <img src="../img/img2.png" alt="" class="img-fluid w-100">
-                            <div
-                                class="layer position-absolute rounded-4 text-light d-flex justify-content-center align-items-center flex-column">
-                                <h3>Mountain Hiking Tour</h3>
-                                <h5>Mountain Hiking Tour</h5>
-                                <div class="card-details  d-flex gap-5 mt-5 justify-content-between align-items-center">
-                                    <h5>85$</h5>
-                                    <a href="" class="btn fw-bold main-btn text-white">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
                 </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="inner-item">
+                        <img src="../img/img2.png" alt="img" class="img-fluid w-100 d-block">
+                        <div class="layer rounded-4 d-flex justify-content-center align-items-center">
+                            <div class="inner-layer text-center text-light">
+                                <h4>Mountain Hiking Tour </h4>
+                                <h6 class="mb-5">Mountain Hiking Tour </h6>
+                                <div class="end-card d-flex justify-content-around mt-5 align-items-center">
+                                    <span class="fw-bold fs-4">85$ </span>
+                                    <a class="btn main-btn bg-or text-light" href="./book.html">Book Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="inner-item">
+                        <img src="../img/img3.png" alt="img" class="img-fluid w-100 d-block">
+                        <div class="layer rounded-4 d-flex justify-content-center align-items-center">
+                            <div class="inner-layer text-center text-light">
+                                <h4>Mountain Hiking Tour </h4>
+                                <h6 class="mb-5">Mountain Hiking Tour </h6>
+                                <div class="end-card d-flex justify-content-around mt-5 align-items-center">
+                                    <span class="fw-bold fs-4">85$ </span>
+                                    <a class="btn main-btn bg-or text-light" href="./book.html">Book Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="inner-item">
+                        <img src="../img/img2.png" alt="img" class="img-fluid w-100 d-block">
+                        <div class="layer rounded-4 d-flex justify-content-center align-items-center">
+                            <div class="inner-layer text-center text-light">
+                                <h4>Mountain Hiking Tour </h4>
+                                <h6 class="mb-5">Mountain Hiking Tour </h6>
+                                <div class="end-card d-flex justify-content-around mt-5 align-items-center">
+                                    <span class="fw-bold fs-4">85$ </span>
+                                    <a class="btn main-btn bg-or text-light" href="./book.html">Book Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="inner-item">
+                        <img src="../img/img1.png" alt="img" class="img-fluid w-100 d-block">
+                        <div class="layer rounded-4 d-flex justify-content-center align-items-center">
+                            <div class="inner-layer text-center text-light">
+                                <h4>Mountain Hiking Tour </h4>
+                                <h6 class="mb-5">Mountain Hiking Tour </h6>
+                                <div class="end-card d-flex justify-content-around mt-5 align-items-center">
+                                    <span class="fw-bold fs-4">85$ </span>
+                                    <a class="btn main-btn bg-or text-light" href="./book.html">Book Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="inner-item">
+                        <img src="../img/img3.png" alt="img" class="img-fluid w-100 d-block">
+                        <div class="layer rounded-4 d-flex justify-content-center align-items-center">
+                            <div class="inner-layer text-center text-light">
+                                <h4>Mountain Hiking Tour </h4>
+                                <h6 class="mb-5">Mountain Hiking Tour </h6>
+                                <div class="end-card d-flex justify-content-around mt-5 align-items-center">
+                                    <span class="fw-bold fs-4">85$ </span>
+                                    <a class="btn main-btn bg-or text-light" href="./book.html">Book Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               
             </div>
         </div>
     </div>
-    <footer class="footer py-5 " id="footer">
+
+
+    <footer class=" footer py-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <a href="#"><img src="../img/Logo.png" class="img-fluid" alt="logo"></a>
-                        <p class="my-3">Enjoy The Touring with salty</p>
-                        <div class="medai mt-3 d-flex gap-3">
-                            <a href="https://www.facebook.com/" class="btn  brand  bg-or" target="_blank"><i
+                        <a href=""><img src="../img/Logo.png" class="img-fluid d-block" alt="logo"></a>
+                        <p class="my-3 text-secondary">Enjoy The Touring with salty </p>
+                        <div class="medai mt-2 d-flex gap-3">
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.facebook.com/"><i
                                     class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/" class="btn  brand bg-or" target="_blank"><i
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.instagram.com/"><i
                                     class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.twitter.com/" class="btn  brand bg-or" target="_blank"><i
-                                    class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/" class="btn brand  bg-or" target="_blank"><i
-                                    class="fa-brands fa-linkedin"></i></a>
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Resources</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="my-2">
-                                <a class="text-secondary text-decoration-none" href="#">Dowland</a>
+                        <h3 class="mb-3">Resources </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Dowland</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Help Canter</a>
                             </li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">Help Canter</a>
-                            </li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">Resources</a></li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">DowlanApp
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Resources</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> DowlanApp
                                     Decorationd</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Travelers</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="mt-2">
-                                <a class="text-secondary text-decoration-none" href="#">Why Travelers</a>
+                        <h3 class="mb-3">Travelers </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Why Travelers</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Enterprise</a></li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Customer
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Enterprise</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Customer
                                     Stories</a></li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Instagram Post</a>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Instagram Post</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Company</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="mt-2">
-                                <a class="text-secondary text-decoration-none" href="#">Traveling</a>
-                            </li class="mt-2">
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">About local</a>
+                        <h3 class="mb-3">Company </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href="">Traveling</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> About local</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">information</a>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> informations</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">success</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> success</a></li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
-    </footer>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/code.js"></script>
-</body>
+    </footer>
+    <script src=" ../js/bootstrap.bundle.min.js">
+    </script>
+    <!-- code js -->
+    <script src=" ../js/code.js">
+    </script>
+    </body>
 
 </html>

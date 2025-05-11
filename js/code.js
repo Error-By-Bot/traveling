@@ -1,72 +1,66 @@
-let currentPath = window.location.pathname;
+let currentPath = document.location.pathname;
+let navlikes = document.querySelectorAll(" .navbar .nav-link");
+navlikes.forEach((link) => {
+  let path = link.pathname;
 
-const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-navLinks.forEach((link) => {
-  const linkPath = link.getAttribute("href");
-
-  if (currentPath.endsWith(linkPath)) {
+  if (currentPath === path) {
     link.classList.add("active");
   } else {
     link.classList.remove("active");
   }
 });
-// Active code
+// active link
 
-// JavaScript: Register Form Validation
-// تسجيل المستخدم
-let formRegister = document.getElementById("registerForm");
+let formRegister = document.getElementById("form-register");
+
 if (formRegister) {
-  formRegister.addEventListener("submit", function (e) {
-    e.preventDefault();
+  formRegister.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let name = formRegister.name.value.trim(); // 
+    let email = formRegister.email.value.trim();
+    let password = formRegister.password.value;
+    let compassword = formRegister.compassword.value;
+
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    let nameRegex = /^[a-zA-Z\s]+$/;
+
+    // Clear previous error messages
+    let errorMessages = document.querySelectorAll(".error");
+    errorMessages.forEach((msg) => (msg.textContent = ""));
+
+    let inputs = formRegister.querySelectorAll("input");
+    inputs.forEach((input) => input.classList.remove("is-invalid"));
+
     let valid = true;
 
-    // Reset error messages and input styles
-    document
-      .querySelectorAll(".error-message")
-      .forEach((msg) => (msg.textContent = ""));
-    document
-      .querySelectorAll("input")
-      .forEach((input) => input.classList.remove("error"));
-
-    // Name validation
-    const name = document.getElementById("registerUsername").value.trim();
-    if (!/^[a-zA-Z\s]+$/.test(name)) {
-      document.getElementById("nameError").textContent =
-        "Name must only contain letters.";
-      document.getElementById("registerUsername").classList.add("error");
+    if (!nameRegex.test(name)) {
       valid = false;
+      formRegister.name.classList.add("is-invalid");
+      formRegister.name.nextElementSibling.textContent = "Enter a valid name.";
     }
 
-    // Email validation
-    const email = document.getElementById("email").value.trim();
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (!emailRegex.test(email)) {
-      document.getElementById("emailError").textContent =
-        "Enter a valid email address.";
-      document.getElementById("email").classList.add("error");
       valid = false;
+      formRegister.email.classList.add("is-invalid");
+      formRegister.email.nextElementSibling.textContent =
+        "Enter a valid email.";
     }
 
-    // Password validation
-    const password = document.getElementById("password").value.trim();
     if (password.length < 6) {
-      document.getElementById("passwordError").textContent =
+      valid = false;
+      formRegister.password.classList.add("is-invalid");
+      formRegister.password.nextElementSibling.textContent =
         "Password must be at least 6 characters.";
-      document.getElementById("password").classList.add("error");
-      valid = false;
     }
 
-    // Confirm password validation
-    const confirmPassword = document.getElementById("conpassword").value.trim();
-    if (password !== confirmPassword) {
-      document.getElementById("conpasswordError").textContent =
+    if (password !== compassword) {
+      valid = false;
+      formRegister.compassword.classList.add("is-invalid");
+      formRegister.compassword.nextElementSibling.textContent =
         "Passwords do not match.";
-      document.getElementById("conpassword").classList.add("error");
-      valid = false;
     }
 
-    // If all validations pass, save to sessionStorage
     if (valid) {
       let users = JSON.parse(sessionStorage.getItem("users")) || [];
       const user = { username: name, email: email, password: password };
@@ -77,26 +71,30 @@ if (formRegister) {
     }
   });
 }
+// register
+/* login  */
 
-// Login form submission
-let loginForm = document.getElementById("loginForm");
-if (loginForm) {
-  loginForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+let formLogin = document.getElementById("form-login");
 
-    const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();
+if (formLogin) {
+  formLogin.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-    const users = JSON.parse(sessionStorage.getItem("users")) || [];
-    const user = users.find(
-      (u) => u.email === username && u.password === password
+    let email = formLogin.email.value.trim();
+    let password = formLogin.password.value;
+
+    let users = JSON.parse(sessionStorage.getItem("users")) || [];
+
+    let foundUser = users.find(
+      (user) => user.email === email && user.password === password
     );
 
-    if (user) {
+    if (foundUser) {
       alert("Login successful!");
-      window.location.href = "../index.html";
+      sessionStorage.setItem("currentUser", JSON.stringify(foundUser));
+      window.location.href = "../index.html"; 
     } else {
-      alert("Invalid credentials. Please try again.");
+      alert("Invalid email or password!");
     }
   });
 }

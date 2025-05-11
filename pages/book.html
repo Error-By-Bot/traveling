@@ -17,65 +17,69 @@
     <link rel="stylesheet" href="../Style/all.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="../Style/bootstrap.min.css">
-    <!--bootstrap  -->
-    <link rel="stylesheet" href="../Style/style.css">
+    <!-- boostrap -->
+    <!-- file css -->
+    <link rel="stylesheet" href="../Style/style.css"">
+
+
 </head>
-
 <body>
-    <nav class="navbar py-3 shadow navbar-expand-lg bg-light fixed-top">
-        <div class="container  ">
-            <a class="navbar-brand" href="#"><img src="../img/Logo.png" alt="logo"></a>
-            <div class="d-flex gap-3 align-items-center">
-                <a href="./login.html" class="d-block d-lg-none ms-4 text-dark text-decoration-none  fs-4"><i
-                        class="fa-solid fa-right-to-bracket "></i></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-            </div>
-            <div class="collapse navbar-collapse justify-content-lg-center " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./about.html">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="">Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./tours.html">tours</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./calendar.html">calendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./contact.html">contact</a>
-                    </li>
-                </ul>
-                <div class="right-nav">
-                    <a href="./login.html" class="btn btn-book  btn-danger rounded-pill">Book now</a>
-                </div>
-            </div>
-    
-    
+    <nav class=" navbar py-3 sticky-top shadow navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/Logo.png" alt="logo" class="img-fluid">
+        </a>
+        <div class="togle-nav d-flex align-items-center">
+            <a class="text-dark d-block d-lg-none" href="./pages/login.html"><i
+                    class=" icon-nav fa-solid fa-right-to-bracket"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+
+            </button>
+
         </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  active" aria-current="page"
+                        href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  " href="./about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="#">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize  " href="./tours.html">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="./calendar.html">calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary text-capitalize " href="./contact.html">contact</a>
+                </li>
+            </ul>
+            <a class="btn ms-3 bg-or d-block rounded-pill text-light main-btn" href="./login.html">Book Now</a>
+        </div>
+    </div>
     </nav>
-
-    <div class="book py-5 my-5">
-        <div class="container py-5">
-            <div class="main-header text-center">
-                <h1>Book Now </h1>
-                <p class="w-50 text-secondary m-auto my-3">It is a long established fact that a reader will be of a page
-                    when established fact looking at its
-                    layout.
-                </p>
-            </div>
-
-            <form action="" class="form rounded show" >
+    <!-- end nav -->
+    <section class="book py-5 my-4">
+        <div class="main-header text-center">
+            <h2 class="">Book Now </h2>
+            <p class="text-secondary w-auto m-auto my-3"> It is a long established fact that a reader will be of a page
+                when established fact looking at its
+                layout.
+            </p>
+        </div>
+        <div class="container my-5">
+            <form action="" class="form bg-light p-5 shadow mt-5">
                 <div class="mb-3">
                     <label for="fname" class="form-label">First Name</label>
                     <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name"
@@ -91,14 +95,14 @@
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email"
                         aria-describedby="helpId" />
                 </div>
+
                 <div class="mb-3">
                     <label for="time" class="form-label">Time</label>
-                    <input type="date" name="time" id="time" class="form-control" placeholder="Email"
-                        aria-describedby="helpId" />
+                    <input type="date" name="time" id="time" class="form-control" aria-describedby="helpId" />
                 </div>
                 <div class="mb-3">
-                    <label for="places">Choose a tourist destination in Egypt:</label>
-                    <select class=" form-select"  id="places" name="places">
+                    <label for="des" class="form-label">Choose a tourist destination in Egypt:</label>
+                    <select class=" form-select" id="des" name="places">
                         <option value="dahab">Dahab</option>
                         <option value="hurghada">Hurghada</option>
                         <option value="luxor">Luxor</option>
@@ -111,89 +115,87 @@
                         <option value="fayoum">Fayoum</option>
                     </select>
                 </div>
-
                 <div class="mb-3">
-                    <label for="message" class="form-label">message</label>
-                    <textarea class="form-control" name="" id="message" rows="3"></textarea>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message"  class="form-control" id="message"></textarea>
                 </div>
-                <a href="" class="btn book-btn bg-or text-light border w-100 fs-3 my-5" >Book Now</a>
-                
+                <a class="btn w-100 fs-5 text-light mt-3 bg-or main-btn" href="#">Book Now</a>
             </form>
         </div>
-    </div>
+    </section>
 
 
-
-    <footer class="footer py-5 " id="footer">
+    <footer class=" footer py-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <a href="#"><img src="../img/Logo.png" class="img-fluid" alt="logo"></a>
-                        <p class="my-3">Enjoy The Touring with salty</p>
-                        <div class="medai mt-3 d-flex gap-3">
-                            <a href="https://www.facebook.com/" class="btn  brand  bg-or" target="_blank"><i
+                        <a href=""><img src="../img/Logo.png" class="img-fluid d-block" alt="logo"></a>
+                        <p class="my-3 text-secondary">Enjoy The Touring with salty </p>
+                        <div class="medai mt-2 d-flex gap-3">
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.facebook.com/"><i
                                     class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/" class="btn  brand bg-or" target="_blank"><i
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.instagram.com/"><i
                                     class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.twitter.com/" class="btn  brand bg-or" target="_blank"><i
-                                    class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/" class="btn brand  bg-or" target="_blank"><i
-                                    class="fa-brands fa-linkedin"></i></a>
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="bg-or text-light d-flex justify-content-center align-items-center text-decoration-none"
+                                target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-    
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Resources</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="my-2">
-                                <a class="text-secondary text-decoration-none" href="#">Dowland</a>
+                        <h3 class="mb-3">Resources </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Dowland</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Help Canter</a>
                             </li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">Help Canter</a>
-                            </li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">Resources</a></li>
-                            <li class="my-2"><a class="text-secondary text-decoration-none" href="#">DowlanApp
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Resources</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> DowlanApp
                                     Decorationd</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Travelers</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="mt-2">
-                                <a class="text-secondary text-decoration-none" href="#">Why Travelers</a>
+                        <h3 class="mb-3">Travelers </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Why Travelers</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Enterprise</a></li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Customer
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Enterprise</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Customer
                                     Stories</a></li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">Instagram Post</a>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> Instagram Post</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="inner-footer">
-                        <h3>Company</h3>
-                        <ul class="list-unstyled mt-3">
-                            <li class="mt-2">
-                                <a class="text-secondary text-decoration-none" href="#">Traveling</a>
-                            </li class="mt-2">
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">About local</a>
+                        <h3 class="mb-3">Company </h3>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href="">Traveling</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> About local</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">information</a>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> informations</a>
                             </li>
-                            <li class="mt-2"><a class="text-secondary text-decoration-none" href="#">success</a></li>
+                            <li><a class="text-decoration-none text-secondary my-2 d-block" href=""> success</a></li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
+
     </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/code.js"></script>
-</body>
+    <script src=" ../js/bootstrap.bundle.min.js">
+    </script>
+    <!-- code js -->
+    <script src=" ../js/code.js">
+    </script>
+    </body>
 
 </html>
